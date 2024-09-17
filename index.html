@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Maze - Blog Post</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #444;
+    font-size: 1.5em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul, ol {
+    margin: 10px 0 20px 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
+
+i {
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Building <i>The Maze</i>: My Journey into 3D Game Engine Development</h1>
+        </header>
+
+        <article>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    Creating a 3D game engine from scratch has always been a dream of mine. Combining my passion for game development with a desire to master fundamental 3D rendering techniques, I embarked on building <i>The Maze</i>, a 3D game engine that uses raycasting to simulate a 3D environment. In this blog post, I’ll take you through the journey of how I designed, developed, and optimized <i>The Maze</i>—a project that showcases my skills in SDL2, C++, and 3D graphics programming.
+                </p>
+            </section>
+
+            <section id="inspiration">
+                <h2>Inspiration Behind <i>The Maze</i></h2>
+                <p>
+                    The inspiration for <i>The Maze</i> stems from classic games like <i>Wolfenstein 3D</i> and <i>DOOM</i>, which used raycasting to create immersive 3D worlds using 2D maps. I wanted to replicate the charm of those games while adding my twist: random maze generation, texture mapping, and modern user input controls.
+                </p>
+            </section>
+
+            <section id="project-overview">
+                <h2>Project Overview</h2>
+                <ul>
+                    <li><strong>Raycasting Rendering:</strong> A 2D map is rendered as a 3D environment using raycasting techniques.</li>
+                    <li><strong>Texture Mapping:</strong> Textures are applied to walls for a more immersive visual experience.</li>
+                    <li><strong>Camera and Player Movement:</strong> Players can move and rotate their viewpoint, providing a sense of exploration.</li>
+                    <li><strong>Collision Detection:</strong> Ensures that players can't pass through walls, adding realism.</li>
+                    <li><strong>Random Maze Generation:</strong> Every playthrough features a new, procedurally generated maze layout.</li>
+                </ul>
+            </section>
+
+            <section id="technologies-used">
+                <h2>Technologies Used</h2>
+                <p>The following technologies were instrumental in bringing <i>The Maze</i> to life:</p>
+                <ul>
+                    <li><strong>SDL2:</strong> For rendering, handling input, and managing the game window.</li>
+                    <li><strong>C++:</strong> Core game engine logic and algorithms are written in C++ for efficiency.</li>
+                    <li><strong>OpenGL:</strong> Used for texture mapping and future enhancements like lighting effects.</li>
+                    <li><strong>Raycasting Algorithms:</strong> Based on classic rendering techniques to simulate 3D from 2D data.</li>
+                </ul>
+            </section>
+
+            <section id="development-process">
+                <h2>Development Process</h2>
+                <ol>
+                    <li><strong>Research and Planning:</strong> Researching how early 3D games used raycasting and planning the engine’s architecture.</li>
+                    <li><strong>Prototyping the Engine:</strong> Building a basic rendering engine using SDL2 and C++ to simulate a 3D environment.</li>
+                    <li><strong>Implementing Core Features:</strong> Adding features like camera controls, collision detection, and texture mapping.</li>
+                    <li><strong>Optimization and Testing:</strong> Optimizing performance and testing for gameplay fluidity and controls accuracy.</li>
+                </ol>
+            </section>
+
+            <section id="challenges">
+                <h2>Challenges Faced</h2>
+                <p>
+                    One of the biggest challenges was implementing texture mapping efficiently. Balancing texture quality with performance required a lot of tweaking and optimization. Additionally, collision detection had to be fine-tuned to ensure smooth movement without glitches.
+                </p>
+            </section>
+
+            <section id="lessons-learned">
+                <h2>What I Learned</h2>
+                <p>
+                    Developing <i>The Maze</i> gave me deep insight into 3D rendering techniques, especially raycasting and texture mapping. I also honed my C++ skills and learned how to optimize game engines for performance. This project strengthened my problem-solving abilities, particularly in debugging graphical and collision issues.
+                </p>
+            </section>
+
+            <section id="whats-next">
+                <h2>What’s Next for <i>The Maze</i></h2>
+                <p>
+                    The next phase of development will include adding more complex features, such as:
+                </p>
+                <ul>
+                    <li>Lighting Effects to create realistic shadows and depth in the maze.</li>
+                    <li>Enemy AI to introduce NPCs that navigate the maze.</li>
+                    <li>Level Progression, allowing players to unlock new levels with increasing difficulty.</li>
+                </ul>
+            </section>
+
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p>
+                    <i>The Maze</i> has been an exciting and rewarding project. It not only allowed me to develop core game engine features but also gave me a strong foundation in 3D graphics programming. Moving forward, I plan to keep refining and expanding this engine, adding more features to make it an even more engaging experience. Stay tuned for future updates!
+                </p>
+            </section>
+        </article>
+    </div>
+
+    <script src="script.js">
+      // Placeholder for any potential interactivity
+console.log("Blog post script loaded!");
+
+// You can add future interactivity here, such as smooth scrolling or interactive elements.
+
+    </script>
+</body>
+</html>
